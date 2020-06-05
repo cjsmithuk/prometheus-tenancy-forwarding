@@ -3,4 +3,4 @@
     --config.file=./prom2.yml \
     --web.listen-address="0.0.0.0:9122" \
     --storage.tsdb.path="prom2data/" \
-    > prom1.log 2>&1
+    > prom2.log 2>&1
