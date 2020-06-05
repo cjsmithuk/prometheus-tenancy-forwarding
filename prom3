@@ -1,0 +1,6 @@
+#!/bin/bash
+/opt/prometheus/prometheus \
+    --config.file=./prom3.yml \
+    --web.listen-address="0.0.0.0:9221" \
+    --storage.tsdb.path="prom3data/" \
+    > prom3.log 2>&1
