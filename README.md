@@ -14,6 +14,7 @@ Example of simple tenancy and forwarding with prometheus
 2. Create a python virtual environment: `python3 -m venv venv`
 3. Enter the virtual environment `source venv/bin/activate`
 4. Install required packages `python3 -m pip install prometheus_client`
-5. Run met1 `./met.py 1 &` which will listen on port 9021. `curl http://localhost:9021/metrics` to check.
-6. Run met2 `./met.py 2 &` which will listen on port 9022. `curl http://localhost:9022/metrics` to check.
-
+5. Run met1 tenant `./met.py 1 &`. `curl http://localhost:9021/metrics` to check.
+6. Run met2 tenant `./met.py 2 &`. `curl http://localhost:9022/metrics` to check.
+7. Run met1 prometheus `./prom1 &`. `curl http://localhost:9121` to check.
+8. Run met2 prometheus `./prom2 &`. `curl http://localhost:9122` to check.
