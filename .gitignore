@@ -1,2 +1,4 @@
 .vscode
 venv
+prom*data
+*.log
