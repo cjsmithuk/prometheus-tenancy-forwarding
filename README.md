@@ -3,9 +3,9 @@ Example of simple tenancy and forwarding with prometheus
 
 # Structure
 
-    [ met1 ] --> [ prom1 / label ] --\
-                                      >---> [prom3] --> query interface
-    [ met2 ] --> [ prom2 / label ] --/
+    [ met1 :9021 ] --> [ prom1 :9121 / label ] --\
+                                                  >---> [ prom3 :9221 ] --> query interface
+    [ met2 :9022 ] --> [ prom2 :9122 / label ] --/
 
 
 # Set up
