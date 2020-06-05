@@ -18,7 +18,7 @@ def process_request(t):
     time.sleep(t)
 
 def metrics_server(n):
-    port = int('909' + str(n))
+    port = int('902' + str(n))
     start_http_server(port)
     while True:
         process_request(random.random())
