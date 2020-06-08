@@ -3,9 +3,7 @@ Example of simple tenancy and forwarding/federation with prometheus
 
 # Structure
 
-    [ met1 :9021 ] --> [ prom1 :9121 / label ] --\
-                                                  >---> [ prom3 :9221 ] --> query interface
-    [ met2 :9022 ] --> [ prom2 :9122 / label ] --/
+![diagram](diagram.png)
 
 * met1 is a metrics endpoint for tenant "met1"
 * met2 is a metrics endpoint for tenant "met2"
