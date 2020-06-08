@@ -1,0 +1,15 @@
+digraph G {
+    forcelabels=true;
+    rankdir="RL";
+    met1[label=<met1<br/>:9021>]
+    met2[label=<met1<br/>:9022>]
+    prom1[label=<prom1<br/>:9121>]
+    prom2[label=<prom2<br/>:9122>]
+    prom3[label=<prom3<br/>:9221>]
+    grafana[label=<grafana<br/>:8080>]
+    prom1 -> met1
+    prom2 -> met2
+    prom3 -> prom1
+    prom3 -> prom2
+    grafana -> prom3
+}
