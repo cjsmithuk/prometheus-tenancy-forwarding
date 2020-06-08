@@ -26,4 +26,5 @@ def metrics_server(n):
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: met.py N")
-    metrics_server(sys.argv[1])
+    else:
+        metrics_server(sys.argv[1])
